@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Ejecutiva | Plataforma IA People Analytics Deoleo</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">IA RRHH Deoleo</a>
+            <ul class="navbar-links">
+                <li><a href="#context">Contexto</a></li>
+                <li><a href="#solution">Fase 1</a></li>
+                <li><a href="#architecture">Arquitectura</a></li>
+                <li><a href="#scope-clarity">Alcance & Roadmap</a></li>
+                <li><a href="#roadmap">Roadmap Evolutivo</a></li>
+                <li><a href="#benefits">Beneficios</a></li>
+                <li><a href="#faq">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <h1>Plataforma de IA para People Analytics y RRHH</h1>
+            <p class="subtitle">Automatización del People Analytics Book, consultas en lenguaje natural y bases sólidas para la analítica avanzada en Deoleo.</p>
+            
+            <div class="hero-cards">
+                <div class="hero-card">
+                    <strong>Eliminación de Tareas Manuales</strong>
+                    <p>Automatización end-to-end de la generación del Book mensual.</p>
+                </div>
+                <div class="hero-card">
+                    <strong>Acceso Self-Service</strong>
+                    <p>Consultas de datos de RRHH y costes mediante lenguaje natural (NLQ).</p>
+                </div>
+                <div class="hero-card">
+                    <strong>Visibilidad y Gobierno</strong>
+                    <p>Modelo único de verdad para Finanzas y RRHH.</p>
+                </div>
+                <div class="hero-card">
+                    <strong>Futuro Preparado</strong>
+                    <p>Cimientos sólidos para analítica predictiva posterior.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEXTO Y NECESIDADES -->
+    <section id="context">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contexto y Necesidades</h2>
+                <p>Del diagnóstico actual a la solución propuesta en el Alcance IA.</p>
+            </div>
+            
+            <div class="context-grid">
+                <div>
+                    <h3>El Reto Actual</h3>
+                    <p>Actualmente, la generación del <strong>People Analytics Book</strong> conlleva una carga operativa manual significativa. La información reside dispersa entre sistemas transaccionales y archivos desconectados, lo que dificulta la agilidad en la toma de decisiones.</p>
+                    <p>Es necesario unificar fuentes críticas como <strong>Oracle EPM, Cornerstone y SAP/SharePoint</strong> en un modelo de datos gobernado que actúe como "fuente única de la verdad".</p>
+                </div>
+                <div class="context-box">
+                    <h3>Objetivos Clave Fase 1</h3>
+                    <ul class="check-list">
+                        <li>Centralizar la ingesta de datos sin alterar los sistemas origen.</li>
+                        <li>Proporcionar analítica descriptiva (qué pasó y por qué).</li>
+                        <li>Habilitar un consumo de información ágil y explicativo para negocio.</li>
+                        <li>Asegurar la validación financiera del dato ("sin desviaciones").</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUÉ RESUELVE LA FASE 1 -->
+    <section id="solution" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Alcance Funcional: Fase 1</h2>
+                <p>El núcleo obligatorio para transformar la analítica de RRHH.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Automatización del Book <span class="tag tag-phase1">Core</span></h3>
+                    <p>Generación automática del PDF mensual a partir de un modelo de datos único. Incluye pipelines ETL/ELT desde Cornerstone, EPM y SAP. El objetivo es replicar el reporting actual sin desviaciones.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Dashboard Interactivo <span class="tag tag-phase1">Core</span></h3>
+                    <p>Panel mensual interactivo con filtros de negocio (BU, país, nivel) y drill-down básico. Permite visualizar la misma información del Book de forma dinámica y trazable.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Motor de Insights (IA) <span class="tag tag-phase1">IA Descriptiva</span></h3>
+                    <p>Generación de narrativas automáticas que explican desviaciones vs ABP/PY, causas probables y anomalías detectadas, integradas directamente en el reporte.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Asistente Conversacional <span class="tag tag-phase1">NLQ</span></h3>
+                    <p>Chatbot gobernado que permite preguntas en lenguaje natural (ej. "¿Gastos de personal en España vs Presupuesto?"). Devuelve dato, gráfico y explicación.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Alertas Básicas <span class="tag tag-phase1">Control</span></h3>
+                    <p>Sistema de notificaciones para detección y reporte de desviaciones de KPI que superen umbrales predefinidos (Nivel 1).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARQUITECTURA -->
+    <section id="architecture">
+        <div class="container">
+            <div class="section-title">
+                <h2>Arquitectura de Alto Nivel</h2>
+                <p>Un diseño modular, seguro y escalable en tres capas.</p>
+            </div>
+
+            <div class="arch-diagram">
+                <div class="arch-layer" style="border-color: var(--accent); background: #fdfefe;">
+                    <span class="arch-title">1. Capa de Origen e Ingesta</span>
+                    <div class="arch-content">
+                        <span class="arch-pill">Oracle EPM</span>
+                        <span class="arch-pill">Cornerstone</span>
+                        <span class="arch-pill">SAP / SharePoint</span>
+                    </div>
+                </div>
+
+                <div class="arch-layer" style="border-color: var(--accent); background: #fdfefe;">
+                    <span class="arch-title" style="color: var(--accent);">2. Capa de Datos e Inteligencia (Núcleo)</span>
+                    <div class="arch-content">
+                        <span class="arch-pill">Modelo Único RRHH</span>
+                        <span class="arch-pill">Reglas de Negocio</span>
+                        <span class="arch-pill">Motor Insights (LLM/RAG)</span>
+                    </div>
+                </div>
+
+                <div class="arch-layer" style="border-color: var(--accent); background: #fdfefe;">
+                    <span class="arch-title">3. Capa de Consumo</span>
+                    <div class="arch-content">
+                        <span class="arch-pill">Book PDF</span>
+                        <span class="arch-pill">Dashboard</span>
+                        <span class="arch-pill">Chatbot NLQ</span>
+                        <span class="arch-pill">Alertas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenarios">
+                <div class="scenario-box">
+                    <strong>Escenario A: Cloud Deoleo</strong>
+                    <p>Arquitectura con Data Lake/Lakehouse desplegado íntegramente en el entorno Cloud de Deoleo. Máximo control y residencia del dato 100% interna.</p>
+                </div>
+                <div class="scenario-box">
+                    <strong>Escenario B: Híbrido</strong>
+                    <p>Ingesta orquestada on-premise (Airflow), con procesamiento y capa semántica ligera en Cloud de ThirdWish. Implementación más rápida y optimizada en costes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUIDO VS ROADMAP -->
+    <section id="scope-clarity">
+        <div class="container">
+            <div class="section-title">
+                <h2>Alcance y Roadmap</h2>
+                <p>Claridad absoluta sobre qué se entrega ahora y qué es evolutivo.</p>
+            </div>
+
+            <div class="scope-container">
+                <div class="scope-col scope-in">
+                    <h3 style="color: var(--accent);">Incluido en Fase 1 (Descriptivo)</h3>
+                    <p>Foco: Automatización, dato único y explicación del pasado/presente.</p>
+                    <ul class="check-list">
+                        <li>Automatización del People Analytics Book (PDF).</li>
+                        <li>Dashboard Interactivo mensual.</li>
+                        <li>Consultas en lenguaje natural (Asistente).</li>
+                        <li>Explicación de desviaciones y causas (Insights).</li>
+                        <li>Alertas básicas por umbral de KPI.</li>
+                        <li>Validación "sin desviaciones" vs manual actual.</li>
+                    </ul>
+                </div>
+                <div class="scope-col scope-out">
+                    <h3>Roadmap / Futuro (Predictivo)</h3>
+                    <p>Foco: Modelización avanzada, simulación y mercado externo.</p>
+                    <ul class="cross-list">
+                        <li>Predicción de rotación futura (Machine Learning).</li>
+                        <li>Simulaciones "What-If" (Escenarios hipotéticos).</li>
+                        <li>Benchmarking externo (Datos de mercado).</li>
+                        <li>Gemelo Digital de RRHH.</li>
+                        <li>Análisis avanzado de texto libre (Encuestas).</li>
+                    </ul>
+                    <small>Estas capacidades se definen como evolutivas (E1, E2, E3) en la propuesta técnica.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP EVOLUTIVO -->
+    <section id="roadmap" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Camino de Evolución</h2>
+                <p>Una vez estabilizada la Fase 1, la plataforma está lista para crecer.</p>
+            </div>
+            
+            <div class="roadmap">
+                <div class="step active">
+                    <span class="step-label">FASE 1 (Actual)</span>
+                    <h4>Core & IA Descriptiva</h4>
+                    <p>Dato único, Book automático y asistente conversacional.</p>
+                </div>
+                <div class="step">
+                    <span class="step-label">Evolutivo E1</span>
+                    <h4>Predicción Avanzada</h4>
+                    <p>Modelos de ML para rotación y proyección de costes futuros.</p>
+                </div>
+                <div class="step">
+                    <span class="step-label">Evolutivo E2</span>
+                    <h4>Benchmarking</h4>
+                    <p>Integración estructurada de fuentes externas de mercado.</p>
+                </div>
+                <div class="step">
+                    <span class="step-label">Evolutivo E3</span>
+                    <h4>Gemelo Digital</h4>
+                    <p>Análisis de encuestas y simulaciones complejas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS POR PERFIL -->
+    <section id="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Beneficios por Perfil</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">👥</span>
+                    <h3>RRHH y People Analytics</h3>
+                    <p>Eliminación de carga manual en el reporte mensual. Capacidad de responder preguntas de negocio al instante y foco en el análisis de valor añadido.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🛡️</span>
+                    <h3>IT y Arquitectura</h3>
+                    <p>Gobierno del dato robusto. Integración segura con sistemas legacy (Oracle, SAP) y una arquitectura preparada para escalar hacia IA avanzada.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">📈</span>
+                    <h3>Finanzas y Control</h3>
+                    <p>Seguridad en el dato de costes (Staff Costs). Trazabilidad total del dato hasta el origen y validación estricta contra el Book oficial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQS -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">¿Dónde residen los datos y quién tiene el control? <span>+</span></div>
+                <div class="faq-answer">
+                    Dependiendo del escenario elegido (A o B), los datos residen en el Cloud de Deoleo (Data Lake propio) o en un entorno híbrido gestionado. En ambos casos, Deoleo mantiene la propiedad y el gobierno, y el modelo de IA opera con política de "Zero Data Retention" (no entrena con sus datos).
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">¿Qué implica para los sistemas actuales (Oracle, SAP)? <span>+</span></div>
+                <div class="faq-answer">
+                    La plataforma actúa como una capa de lectura e inteligencia. No modifica datos en los sistemas origen. Se establecen pipelines de ingesta (ETL) programados que no afectan a la operativa diaria de Oracle EPM o Cornerstone.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">¿Cómo se protege la confidencialidad de los datos de empleados? <span>+</span></div>
+                <div class="faq-answer">
+                    Se aplica seguridad a nivel de fila (Row Level Security) en el modelo de datos. El motor de IA (LLM) accede a los datos anonimizados o agregados mediante técnicas RAG (Retrieval-Augmented Generation) y los datos nunca salen del perímetro de seguridad para entrenamiento público.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">¿Qué se entrega exactamente en la Fase 1? <span>+</span></div>
+                <div class="faq-answer">
+                    Se entrega la automatización completa del People Analytics Book (PDF), el Dashboard Interactivo, el Asistente Conversacional operativo y el motor de insights descriptivos, todo validado mediante UAT.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">¿Qué esfuerzo interno se espera de Deoleo? <span>+</span></div>
+                <div class="faq-answer">
+                    Se requiere disponibilidad para la Fase 0 (definición de KPIs y accesos), validación periódica (Sprints) y el UAT final. IT deberá facilitar credenciales de acceso a fuentes y RRHH validar las reglas de negocio.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Propuesta Técnica de Plataforma IA para RRHH - Documento de Acompañamiento Ejecutivo</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">ThirdWish Systems </p>
+        </div>
+    </footer>
+
+<script src="js/actions.js"></script>
+</body>
+</html>
